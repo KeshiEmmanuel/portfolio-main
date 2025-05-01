@@ -21,8 +21,8 @@ function Hero() {
     return (
         <section className="section-padding">
             <div className="flex flex-col font-bold primary-font">
-                <div className="hero-text secondary-font">
-                    <h1 className="text-gradient h-[85px]">
+                <div className="hero-text secondary-font ">
+                    <h1 className="text-gradient sm:h-[60px] md:h-[65px] lg:h-[85px]">
                         Transforming
                         <span className="slide">
                             <span className="wrapper text-gradient">
@@ -47,10 +47,11 @@ function Hero() {
                 </div>
             </div>
 
-            <p className="primary-font text-lg text-stone-400 pt-2 pb-5">
+            <p className="primary-font lg:text-lg text-stone-400 lg:pt-2 py-5 lg:pb-5">
                 Hi,i'm <strong className="text-white">Chukwuebuka</strong> a
                 developer based in Nigeria, with unfathomable passion for
-                building seamless and scalable <br />
+                building seamless and scalable{" "}
+                <br className="hidden lg:block" />
                 solutions that aligns with User’s needs.
             </p>
             <a href="#work">

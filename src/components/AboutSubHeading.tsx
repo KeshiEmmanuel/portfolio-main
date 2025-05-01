@@ -1,11 +1,11 @@
 const AboutSubHeading = () => {
     return (
         <section>
-            <div className="flex gap-14 mt-10">
-                <p className="text-4xl font-semibold tracking-tighter">
+            <div className="flex flex-col xl:flex-row gap-14 mt-10">
+                <p className="text-4xl font-bold tracking-tighter">
                     Hi, I'm Chukwuebuka
                 </p>
-                <p className="w-5xl text-lg text-gray-300">
+                <p className="xl:w-5xl text-lg text-gray-300">
                     I'm a web developer focused on building AI-powered tools
                     that simplify complexity and deliver real impact. With a
                     solid full-stack background, I craft SaaS platforms and

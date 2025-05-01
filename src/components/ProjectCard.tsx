@@ -8,14 +8,16 @@ interface Props {
 }
 export default function ProjectCard({ project }: Props) {
     return (
-        <article className={`card card-${project.projectId} cursor-pointer`}>
+        <article
+            className={`card card-${project.projectId} cursor-pointer py-10 xl:py-0`}
+        >
             <img
                 src={project.projectImage}
                 alt={project.projectTitle}
                 className="w-full"
             />
 
-            <h1 className="secondary-font font-bold my-2 flex items-center gap-2">
+            <h1 className="secondary-font font-bold my-2 flex items-center gap-2 py-2 xl:py-0">
                 {project.projectTitle}
                 {!project.completeStatus && (
                     <Badge className="bg-orange-200 animate-pulse">

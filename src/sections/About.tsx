@@ -20,14 +20,13 @@ function About() {
             <p className="py-2 rounded-full mb-5 bg-gray-700/40 backdrop-blur-lg w-[8rem] flex justify-center text-gray-300">
                 About me ⚡
             </p>
-            <h1 className="section-heading font-light text-7xl text-gray-100 tracking-tight secondary-font">
+            <h1 className="section-heading font-light text-5xl xl:text-7xl text-gray-100 tracking-tight secondary-font">
                 I turn ideas and designs into unique,
                 <br /> results-driven solutions — blending creativity and
                 purpose to build impactful digital experiences.
             </h1>
             <AboutSubHeading />
         </section>
-
     );
 }
 
