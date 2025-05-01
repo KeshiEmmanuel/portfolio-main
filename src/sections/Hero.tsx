@@ -22,7 +22,7 @@ function Hero() {
         <section className="section-padding">
             <div className="flex flex-col font-bold primary-font">
                 <div className="hero-text secondary-font ">
-                    <h1 className="text-gradient sm:h-[60px] md:h-[65px] lg:h-[85px]">
+                    <h1 className="text-gradient sm:h-[60px] md:h-[65px] lg:h-[75px]">
                         Transforming
                         <span className="slide">
                             <span className="wrapper text-gradient">
