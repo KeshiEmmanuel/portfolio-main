@@ -13,16 +13,16 @@ function Hero() {
                 opacity: 1,
                 stagger: 0.2,
                 duration: 1,
-                ease: "power2.inOut",
+                ease: "power1.inOut",
             }
         );
     });
 
     return (
         <section className="section-padding">
-            <div className="flex flex-col font-bold tracking-tight py-2 text-gradient primary-font">
-                <div className="hero-text">
-                    <h1 className="text-gradient">
+            <div className="flex flex-col font-bold primary-font">
+                <div className="hero-text secondary-font">
+                    <h1 className="text-gradient h-[85px]">
                         Transforming
                         <span className="slide">
                             <span className="wrapper text-gradient">
@@ -42,7 +42,7 @@ function Hero() {
                             </span>
                         </span>
                     </h1>
-                    <h1 className="text-gradient">into standout,</h1>
+                    <h1 className="text-gradient">into unique,</h1>
                     <h1 className="text-gradient">results-driven solutions</h1>
                 </div>
             </div>
@@ -51,11 +51,14 @@ function Hero() {
                 Hi,i'm <strong className="text-white">Chukwuebuka</strong> a
                 developer based in Nigeria, with unfathomable passion for
                 building seamless and scalable <br />
-                frontend solutions that aligns with User’s needs.
+                solutions that aligns with User’s needs.
             </p>
-            <button className="bg-white/85 primary-font rounded-md py-2 px-4 backdrop-blur-xl text-black flex items-center gap-2">
-                See my work <FaCircleChevronDown className="animate-bounce" />
-            </button>
+            <a href="#work">
+                <button className="bg-white/85 primary-font rounded-md py-2 px-4 backdrop-blur-xl text-black flex items-center gap-2">
+                    See my work{" "}
+                    <FaCircleChevronDown className="animate-bounce" />
+                </button>
+            </a>
         </section>
     );
 }
