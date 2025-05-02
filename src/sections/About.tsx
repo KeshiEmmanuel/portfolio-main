@@ -1,6 +1,9 @@
 import AboutSubHeading from "../components/AboutSubHeading";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
 function About() {
     useGSAP(() => {
         gsap.fromTo(
@@ -9,7 +12,12 @@ function About() {
             {
                 y: 0,
                 opacity: 1,
-                stagger: 0.3,
+                scrollTrigger: {
+                    trigger: ".section-heading",
+                    start: "top 80%", // when h1 reaches 80% from the top of the viewport
+                    toggleActions: "play reverse play reverse",
+                },
+                stagger: 0.5,
                 duration: 1,
                 ease: "power2.inOut",
             }

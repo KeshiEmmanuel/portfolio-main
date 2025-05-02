@@ -8,14 +8,14 @@ const Navbar = () => {
         gsap.to(planeRef.current, {
             opacity: 1,
             y: 0,
-            ease: "power3.out",
+            ease: "power1.out",
         });
     };
     const handleMouseLeave = () => {
         gsap.to(planeRef.current, {
             opacity: 0,
             y: 50,
-            ease: "power3.in",
+            ease: "power1.in",
         });
     };
     return (

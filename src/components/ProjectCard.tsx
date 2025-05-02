@@ -1,14 +1,45 @@
 import { ProjectTypes } from "../constants";
 import { FaGithub, FaLink } from "react-icons/fa6";
 import { IoMdBuild } from "react-icons/io";
-
+import { useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 import { Badge } from "./ui/badge";
+
 interface Props {
     project: ProjectTypes;
 }
+gsap.registerPlugin(ScrollTrigger);
+
 export default function ProjectCard({ project }: Props) {
+    const ProjectCardsRef = useRef<HTMLElement>(null);
+
+    useGSAP(() => {
+        gsap.fromTo(
+            ProjectCardsRef.current,
+            {
+                y: 50,
+                opacity: 0,
+            },
+            {
+                y: 0,
+                scrollTrigger: {
+                    trigger: ProjectCardsRef.current,
+                    start: "top 80%", // when h1 reaches 80% from the top of the viewport
+                    toggleActions: "play reverse play reverse",
+                },
+                opacity: 1,
+                stagger: 0.2,
+                duration: 1,
+                delay: 0.3 * (project.projectId),
+                ease: "power1.inOut",
+            }
+        );
+    });
     return (
         <article
+            ref={ProjectCardsRef}
             className={`card card-${project.projectId} cursor-pointer py-10 xl:py-0`}
         >
             <img
