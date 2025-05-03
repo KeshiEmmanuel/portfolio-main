@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
+import { FiExternalLink } from "react-icons/fi";
 
 export const Contact = () => {
     return (
@@ -30,6 +31,14 @@ export const Contact = () => {
                     </a>
                     <a href="https://x.com/keshichidera" target="_blank">
                         <FaTwitter />
+                    </a>
+                    <a
+                        href="https://drive.google.com/file/d/1lwC7xKEUPrsp2C16OR3Xs6SYJzDzUvDR/view?usp=drive_link"
+                        target="_blank"
+                        className="text-sm cursor-pointer flex items-center gap-1 duration-400 rounded-full primary-font bg-white backdrop-blur-md text-black py-2 px-5 hover:bg-gray-300"
+                    >
+                        View Resume
+                        <FiExternalLink />
                     </a>
                 </div>
             </div>
