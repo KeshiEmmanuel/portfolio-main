@@ -20,14 +20,14 @@ function Hero() {
                 opacity: 1,
                 stagger: 0.2,
                 duration: 1,
-                ease: "power1.inOut",
+                ease: "power2.inOut",
             }
         );
         gsap.fromTo(
             ".hero-subheading",
             {
                 opacity: 0,
-                y: -50,
+                y: 50,
             },
             {
                 y: 0,
