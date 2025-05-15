@@ -3,19 +3,36 @@ import { useRef } from "react";
 import gsap from "gsap";
 const Navbar = () => {
     const planeRef = useRef<HTMLDivElement>(null);
+    const buttonRef = useRef<HTMLButtonElement>(null);
 
     const handleMouseEnter = () => {
-        gsap.to(planeRef.current, {
-            opacity: 1,
-            y: 0,
-            ease: "power1.out",
+        gsap.fromTo(
+            planeRef.current,
+            {
+                opacity: 0,
+                y: 50,
+                ease: "power1.in",
+            },
+            {
+                opacity: 1,
+                y: 0,
+                ease: "power1.out",
+            }
+        );
+        gsap.to(buttonRef.current, {
+            width: 140,
+            ease: "power1.in",
         });
     };
     const handleMouseLeave = () => {
         gsap.to(planeRef.current, {
             opacity: 0,
             y: 50,
-            ease: "power1.in",
+            ease: "power1.out",
+        });
+        gsap.to(buttonRef.current, {
+            width: 130,
+            ease: "power1.out",
         });
     };
     return (
@@ -40,8 +57,9 @@ const Navbar = () => {
                     <a href="mailto:keshichidera@gmail.com" target="_blank">
                         <button
                             onMouseEnter={handleMouseEnter}
+                            ref={buttonRef}
                             onMouseLeave={handleMouseLeave}
-                            className="bg-white/85 relative w-[8.5rem]  hover-btn cursor-pointer flex items-center text-black py-2 font-semibold rounded-md px-5 backdrop-blur-2xl"
+                            className="bg-white/85 relative  hover-btn cursor-pointer flex items-center text-black py-2 font-semibold rounded-md px-5 backdrop-blur-2xl"
                         >
                             Contact me
                             <div
