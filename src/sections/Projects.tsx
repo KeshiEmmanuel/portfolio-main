@@ -10,7 +10,10 @@ const Projects = () => {
                 </p>
                 <div className="grid showcaselayout">
                     {showcasedProjects.map((project) => (
-                        <ProjectCard project={project} />
+                        <ProjectCard
+                            project={project}
+                            key={project.projectId}
+                        />
                     ))}
                 </div>
             </div>
