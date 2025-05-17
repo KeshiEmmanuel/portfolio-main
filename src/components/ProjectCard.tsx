@@ -1,5 +1,5 @@
 import { ProjectTypes } from "../constants";
-import { FaGithub, FaLink } from "react-icons/fa6";
+import { FaGithub, FaLink, FaShip } from "react-icons/fa6";
 import { IoMdBuild } from "react-icons/io";
 import { useRef } from "react";
 import gsap from "gsap";
@@ -32,7 +32,7 @@ export default function ProjectCard({ project }: Props) {
                 opacity: 1,
                 stagger: 0.2,
                 duration: 1,
-                delay: 0.3 * (project.projectId),
+                delay: 0.3 * project.projectId,
                 ease: "power1.inOut",
             }
         );
@@ -51,9 +51,9 @@ export default function ProjectCard({ project }: Props) {
             <h1 className="secondary-font font-bold my-2 flex items-center gap-2 py-2 xl:py-0">
                 {project.projectTitle}
                 {!project.completeStatus && (
-                    <Badge className="bg-orange-200 animate-pulse">
-                        <IoMdBuild />
-                        Still in Progress
+                    <Badge className="bg-green-500 animate-pulse">
+                        <FaShip />
+                        Shipped
                     </Badge>
                 )}
             </h1>

@@ -18,7 +18,7 @@ export const showcasedProjects = [
             "Upload lecture notes, research papers, or PDFs and get instant, AI-powered summaries and research insights.",
         completeStatus: false,
         githubLink: "https://github.com/KeshiEmmanuel/learnease-main",
-        liveLink: "",
+        liveLink: "https://learnease-jade.vercel.app/",
     },
     {
         projectId: 2,
