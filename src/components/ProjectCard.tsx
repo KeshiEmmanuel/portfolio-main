@@ -1,6 +1,6 @@
 import { ProjectTypes } from "../constants";
 import { FaGithub, FaLink, FaShip } from "react-icons/fa6";
-import { IoMdBuild } from "react-icons/io";
+
 import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
