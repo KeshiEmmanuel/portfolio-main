@@ -35,7 +35,7 @@ function Hero() {
                 duration: 1.5,
                 scrollTrigger: {
                     trigger: ".hero-subheading",
-                    start: "top 70%",
+                    start: "top 80%",
                     toggleActions: "play reverse play reverse",
                 },
             }
@@ -44,9 +44,12 @@ function Hero() {
 
     return (
         <section className="section-padding">
+            <p className="border-blue-600 text-sm primary-font w-fit px-4 py-2 rounded-2xl mb-4 border-2">
+                Full stack Engineer
+            </p>
             <div className="flex flex-col font-bold primary-font">
-                <div className="hero-text secondary-font ">
-                    <h1 className="text-gradient sm:h-[60px] md:h-[65px] lg:h-[75px]">
+                <div className="hero-text primary-font ">
+                    <h1 className="text-gradient sm:h-[60px] md:h-[65px] lg:h-[80px]">
                         Transforming
                         <span className="slide">
                             <span className="wrapper text-gradient">
@@ -71,7 +74,7 @@ function Hero() {
                 </div>
             </div>
 
-            <p className="primary-font hero-subheading lg:text-lg text-stone-400 lg:pt-2 py-5 lg:pb-5">
+            <p className="secondary-font hero-subheading lg:text-lg text-gray-400 lg:pt-2 py-5 lg:pb-5">
                 Hi,i'm <strong className="text-white">Chukwuebuka</strong> a
                 developer based in Nigeria, with unfathomable passion for
                 building seamless and scalable{" "}
@@ -79,7 +82,7 @@ function Hero() {
                 solutions that aligns with User’s needs.
             </p>
             <a href="#work">
-                <button className="bg-white/85 primary-font rounded-md py-2 px-4 backdrop-blur-xl text-black flex items-center gap-2">
+                <button className="bg-blue-500/95 primary-font rounded-md py-2 px-4 backdrop-blur-xl text-white flex items-center gap-2">
                     See my work{" "}
                     <FaCircleChevronDown className="animate-bounce" />
                 </button>

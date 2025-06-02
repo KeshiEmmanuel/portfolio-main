@@ -32,7 +32,7 @@ export default function ProjectCard({ project }: Props) {
                 opacity: 1,
                 stagger: 0.2,
                 duration: 1,
-                delay: 0.3 * project.projectId,
+                delay: 0.2 * project.projectId,
                 ease: "power1.inOut",
             }
         );

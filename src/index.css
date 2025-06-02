@@ -9,7 +9,7 @@ body {
 }
 
 .section-padding {
-    @apply pt-[6rem] pb-[3rem] xl:pt-[10rem] xl:pb-[3rem];
+    @apply pt-[6rem] pb-[3rem] xl:pt-[9rem] xl:pb-[3rem];
 }
 .primary-font {
     font-family: "Manrope", sans-serif;
