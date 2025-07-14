@@ -10,7 +10,7 @@ export const Contact = () => {
                     <h1 className="text-6xl secondary-font font-bold">
                         Contact Me
                     </h1>
-                    <p className="primary-font py-7 xl:w-[550px] text-gray-300">
+                    <p className="secondary-font py-7 xl:w-[580px] text-gray-300">
                         I'm always open to collaborating on exciting projects,
                         discussing innovative ideas, or exploring freelance
                         opportunities in web development and AI.

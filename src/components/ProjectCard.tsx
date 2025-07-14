@@ -38,46 +38,48 @@ export default function ProjectCard({ project }: Props) {
         );
     });
     return (
-        <article
-            ref={ProjectCardsRef}
-            className={`card card-${project.projectId} cursor-pointer py-10 xl:py-0`}
-        >
-            <img
-                src={project.projectImage}
-                alt={project.projectTitle}
-                className="w-full"
-            />
+        <a href={project.liveLink} target="_blank">
+            <article
+                ref={ProjectCardsRef}
+                className={`card card-${project.projectId} cursor-pointer py-10 xl:py-0`}
+            >
+                <img
+                    src={project.projectImage}
+                    alt={project.projectTitle}
+                    className="w-full"
+                />
 
-            <h1 className="secondary-font font-bold my-2 flex items-center gap-2 py-2 xl:py-0">
-                {project.projectTitle}
-                {!project.completeStatus && (
-                    <Badge className="bg-green-500 animate-pulse">
-                        <FaShip />
-                        Shipped
-                    </Badge>
-                )}
-            </h1>
-            <p className="text-gray-300 my-2">
-                {project.projectId === 1 && project.projectDescription}
-            </p>
-            <div className="flex gap-2 text-gray-500">
-                <a
-                    href={project.githubLink}
-                    target="_blank"
-                    className="hover:text-gray-100"
-                >
-                    <FaGithub />
-                </a>
-                {project.liveLink && (
+                <h1 className="secondary-font font-bold my-2 flex items-center gap-2 py-2 xl:py-0">
+                    {project.projectTitle}
+                    {!project.completeStatus && (
+                        <Badge className="bg-green-500 animate-pulse">
+                            <FaShip />
+                            Shipped
+                        </Badge>
+                    )}
+                </h1>
+                <p className="text-gray-300 secondary-font my-2">
+                    {project.projectId === 1 && project.projectDescription}
+                </p>
+                <div className="flex gap-2 text-gray-500">
                     <a
-                        href={project.liveLink}
+                        href={project.githubLink}
                         target="_blank"
                         className="hover:text-gray-100"
                     >
-                        <FaLink />
+                        <FaGithub />
                     </a>
-                )}
-            </div>
-        </article>
+                    {project.liveLink && (
+                        <a
+                            href={project.liveLink}
+                            target="_blank"
+                            className="hover:text-gray-100"
+                        >
+                            <FaLink />
+                        </a>
+                    )}
+                </div>
+            </article>
+        </a>
     );
 }

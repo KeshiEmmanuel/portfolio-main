@@ -3,6 +3,7 @@ import { words } from "../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Badge } from "../components/ui/badge";
 
 gsap.registerPlugin(ScrollTrigger);
 function Hero() {
@@ -44,9 +45,9 @@ function Hero() {
 
     return (
         <section className="section-padding">
-            <p className="border-blue-600 text-sm primary-font w-fit px-4 py-2 rounded-2xl mb-4 border-2">
+            <Badge className="border-blue-600 text-sm primary-font w-fit px-4 py-1.5 bg-inherit text-white rounded-2xl mb-4 border-2">
                 Full stack Engineer
-            </p>
+            </Badge>
             <div className="flex flex-col font-bold primary-font">
                 <div className="hero-text primary-font ">
                     <h1 className="text-gradient sm:h-[60px] md:h-[65px] lg:h-[80px]">
@@ -69,7 +70,7 @@ function Hero() {
                             </span>
                         </span>
                     </h1>
-                    <h1 className="text-gradient">into unique,</h1>
+                  <h1 className="text-gradient">into unique,</h1>
                     <h1 className="text-gradient">results-driven solutions</h1>
                 </div>
             </div>
