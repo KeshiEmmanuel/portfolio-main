@@ -1,9 +1,9 @@
 import { FaXTwitter, FaLinkedin } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { ArrowUpRight } from "lucide-react";
-import { motion } from "motion/react";
+import { motion, Variants } from "motion/react";
 export const App = () => {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -14,7 +14,7 @@ export const App = () => {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { y: 20, opacity: 0 }, // Start slightly down and invisible
     visible: {
       y: 0,
