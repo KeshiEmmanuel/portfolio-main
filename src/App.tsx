@@ -263,18 +263,19 @@ function PricingCard({
           </div>
         ))}
       </div>
-
-      <button
-        className={`w-full py-3 text-sm font-bold rounded-xl transition-all
+      <a href="https://cal.com/chidera-keshi-qy98f0/30min" target="_blank">
+        <button
+          className={`w-full py-3 text-sm font-bold rounded-xl transition-all
         ${
           isPopular
             ? "bg-blue-600 text-white shadow-lg shadow-blue-600/20 hover:bg-blue-700 hover:shadow-blue-600/30"
             : "bg-white text-slate-900 border border-slate-200 hover:border-blue-400 hover:text-blue-600"
         }
       `}
-      >
-        {cta}
-      </button>
+        >
+          {cta}
+        </button>
+      </a>
     </motion.div>
   );
 }
