@@ -1,11 +1,4 @@
-import {
-  ArrowUpRight,
-  Check,
-  Zap,
-  Smartphone,
-  Rocket,
-  Layout,
-} from "lucide-react";
+import { ArrowUpRight, Check, Smartphone, Rocket, Layout } from "lucide-react";
 import { FaXTwitter, FaLinkedin } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { motion, Variants } from "framer-motion";
