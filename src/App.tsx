@@ -3,14 +3,7 @@ import {
   ArrowUpRight,
   Check,
   Plus,
-  Minus,
   ChevronDown,
-  Layout,
-  Rocket,
-  Smartphone,
-  Zap,
-  Globe,
-  Database
 } from "lucide-react";
 import { FaXTwitter, FaLinkedin } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
