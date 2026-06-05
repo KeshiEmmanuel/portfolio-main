@@ -2,7 +2,7 @@ export default function TechStack() {
   return (
     <section>
       <small className="text-zinc-400 text-sm uppercase">Stack</small>
-      <div className="flex items-center py-5 gap-4">
+      <div className="flex items-center flex-wrap py-5 gap-4">
         <img src="/claude-color.svg" className="w-10 h-10" alt="claude-icon" />
         <img src="/codex-color.svg" className="w-10 h-10" alt="codex-icon" />
         <img
