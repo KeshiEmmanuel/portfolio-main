@@ -1,4 +1,3 @@
-import React from "react";
 import SeeWorkButton from "./SeeMyWorkButton";
 
 export const AboutMe = () => {
