@@ -1,12 +1,12 @@
 const MyExperience = () => {
   return (
-    <section className="flex flex-col gap-6">
+    <section className="px-5 lg:px-0 flex flex-col gap-6">
       <small className="text-sm uppercase  text-zinc-500">My Experience</small>
       <p className="text-zinc-400">
         Through out my journey, here's a brief relevant overview of what i have
         worked across
       </p>
-      <div className="flex justify-between">
+      <div className="flex flex-col gap-2 lg:gap-0  lg:flex-row justify-between">
         <small className="text-zinc-500 text-sm">2025 - Now</small>
         <div className="max-w-[480px]">
           <h1 className="font-medium">
@@ -27,7 +27,7 @@ const MyExperience = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col gap-2 lg:gap-0  lg:flex-row justify-between">
         <small className="text-zinc-500">Mid 2024 - 2025</small>
         <div className="max-w-[480px]">
           <h1 className="font-medium">
@@ -47,7 +47,7 @@ const MyExperience = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col gap-2 lg:gap-0  lg:flex-row justify-between">
         <small className="text-zinc-500">Late 2023 - Early 2024</small>
         <div className="max-w-[480px]">
           <h1 className="font-medium">

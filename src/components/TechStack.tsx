@@ -1,6 +1,6 @@
 export default function TechStack() {
   return (
-    <section>
+    <section className="px-4 lg:px-0">
       <small className="text-zinc-400 text-sm uppercase">Stack</small>
       <div className="flex items-center flex-wrap py-5 gap-4">
         <img src="/claude-color.svg" className="w-10 h-10" alt="claude-icon" />

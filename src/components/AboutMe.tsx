@@ -2,7 +2,7 @@ import SeeWorkButton from "./SeeMyWorkButton";
 
 export const AboutMe = () => {
   return (
-    <section className="h-full flex flex-col gap-6 pt-20">
+    <section className="px-5 lg:px-0  h-full flex flex-col gap-6 pt-20">
       <div>
         <h1 className="text-xl font-medium">
           I'm Keshi Chukwuebuka{" "}
