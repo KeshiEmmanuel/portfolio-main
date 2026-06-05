@@ -127,35 +127,33 @@ body {
     @apply bg-background text-foreground;
   }
 }
-
 .button {
+  padding: 5px 10px;
   font-weight: 500;
   color: #1a1a1a;
   background-color: #ececec;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
   border: 3px solid rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  cursor: pointer;
 
-  /* The keycap depth effect */
   box-shadow:
-    -3px 3px 0 0 #bbb,
+    0 4px 0 0 #aaa,
+    /* bottom depth */ -3px 3px 0 0 #bbb,
     /* left side depth */ 3px 3px 0 0 #bbb,
-    /* right side depth */ 0 4px 0px #bbb,
-    /* thick bottom layer */ 0 6px 8px rgba(0, 0, 0, 0.2),
-    /* outer drop shadow */ inset 0 1px 2px rgba(255, 255, 255, 0.9); /* top inner highlight */
+    /* right side depth */ 0 8px 12px rgba(0, 0, 0, 0.25),
+    /* soft outer shadow */ inset 0 1px 2px rgba(255, 255, 255, 0.9); /* inner highlight */
 
   transition: all 0.1s ease;
 }
 
-/* Press-down effect — completes the metaphor */
 .button:active {
   box-shadow:
-    0 0px 0px #aaa,
-    0 1px 0px #bbb,
-    0 2px 4px rgba(0, 0, 0, 0.2),
+    0 2px 0 0 #aaa,
+    -2px 1px 0 0 #bbb,
+    2px 1px 0 0 #bbb,
+    0 3px 6px rgba(0, 0, 0, 0.2),
     inset 0 1px 2px rgba(255, 255, 255, 0.9);
-  transform: translateY(3px);
+  transform: translateY(4px);
 }
 
 .button:hover {
