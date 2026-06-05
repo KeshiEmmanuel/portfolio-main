@@ -3,14 +3,14 @@ const MyExperience = () => {
     <section className="flex flex-col gap-6">
       <small className="text-sm uppercase  text-zinc-500">My Experience</small>
       <p className="text-zinc-400">
-        Through out my jounrey, here's a brief relevant overview of what i have
+        Through out my journey, here's a brief relevant overview of what i have
         worked across
       </p>
       <div className="flex justify-between">
         <small className="text-zinc-500 text-sm">2025 - Now</small>
         <div className="max-w-[480px]">
           <h1 className="font-medium">
-            Software Engineer at
+            Full-Stack Engineer at
             <span className="inline-flex items-center align-middle ml-2 cursor-pointer text-white font-medium">
               <img
                 src="/featherflow_logo.jpg"
@@ -31,7 +31,7 @@ const MyExperience = () => {
         <small className="text-zinc-500">Mid 2024 - 2025</small>
         <div className="max-w-[480px]">
           <h1 className="font-medium">
-            Software Engineer at
+            FullStack Engineer at
             <span className="inline-flex items-center align-middle cursor-pointer ml-2 text-white font-medium">
               <img
                 src="/anchor.webp"

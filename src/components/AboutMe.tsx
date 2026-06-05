@@ -2,9 +2,14 @@ import SeeWorkButton from "./SeeMyWorkButton";
 
 export const AboutMe = () => {
   return (
-    <section className="h-full flex flex-col gap-6 pt-40">
+    <section className="h-full flex flex-col gap-6 pt-20">
       <div>
-        <h1 className="text-xl font-medium">I'm Keshi Chukwuebuka</h1>
+        <h1 className="text-xl font-medium">
+          I'm Keshi Chukwuebuka{" "}
+          <span className="inline-flex items-center align-middle">
+            <img src="/checkmark.png" className="w-5 h-5" alt="cracked" />
+          </span>{" "}
+        </h1>
         <small className="text-zinc-500 text-sm">
           Engineering / AI / Product
         </small>
