@@ -41,6 +41,7 @@ export default function TechStack() {
           alt="reactQuery-icon"
         />
         <img src="/wordpress.svg" className="w-10 h-10" alt="Wordpress-icon" />
+        <img src="/webflow.svg" className="w-10 h-10" alt="Webflow-icon" />
         <div>
           <svg
             width="32"
