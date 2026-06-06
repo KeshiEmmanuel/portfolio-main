@@ -129,7 +129,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
 };
 
 // ─── Infinite Scroll Track ────────────────────────────────────────────────────
-const SPEED = 0.6; // px per frame — tweak to taste
+const SPEED = 2; // px per frame — tweak to taste
 
 const InfiniteTrack = ({ projects }: { projects: Project[] }) => {
   const trackRef = useRef<HTMLDivElement>(null);
