@@ -34,7 +34,9 @@ export const AboutMe = () => {
         </div>
       </div>
       <div>
-        <SeeWorkButton text="Contact Me" />
+        <a href="mailto:keshichukwuebuka@gmail.com" target="_blank">
+          <SeeWorkButton text="Contact Me" />
+        </a>
       </div>
     </section>
   );
