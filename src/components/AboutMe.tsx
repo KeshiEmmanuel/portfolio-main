@@ -34,7 +34,7 @@ export const AboutMe = () => {
         </div>
       </div>
       <div>
-        <SeeWorkButton text="See My Works" />
+        <SeeWorkButton text="Contact Me" />
       </div>
     </section>
   );
