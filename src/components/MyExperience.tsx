@@ -17,7 +17,9 @@ const MyExperience = () => {
                 className="w-4 h-4 rounded mr-1"
                 alt="logo"
               />
-              Featherflow
+              <a href="https://featherflow.com/" target="_blank">
+                Featherflow
+              </a>
             </span>
           </h1>
           <p className="text-zinc-400">
@@ -38,7 +40,9 @@ const MyExperience = () => {
                 className="w-4 h-4 rounded mr-1"
                 alt="logo"
               />
-              AUL
+              <a href="https://aul.edu.ng/" target="_blank">
+                AUL
+              </a>
             </span>
           </h1>
           <p className="text-zinc-400">
@@ -54,7 +58,9 @@ const MyExperience = () => {
             Frontend Intern at
             <span className="inline-flex items-center align-middle cursor-pointer ml-2 text-white font-medium">
               <img src="/hng.png" className="w-4 h-4 rounded mr-1" alt="logo" />
-              HNG Tech
+              <a href="https://hng.tech/" target="_blank">
+                HNG Tech
+              </a>
             </span>
           </h1>
           <p className="text-zinc-400">

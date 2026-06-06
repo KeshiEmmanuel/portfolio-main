@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { motion, useAnimationFrame, useMotionValue } from "framer-motion";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -88,7 +88,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
 };
 
 // ─── Infinite Scroll Track ────────────────────────────────────────────────────
-const SPEED = 1; // px per frame — tweak to taste
+const SPEED = 1.5; // px per frame — tweak to taste
 
 const InfiniteTrack = ({ projects }: { projects: Project[] }) => {
   const trackRef = useRef<HTMLDivElement>(null);
