@@ -21,7 +21,7 @@ export const AboutMe = () => {
             3 years. At 13, I built a birthday notification system for my
             parents just because I could. Since then, I've built AI content
             workflows for Fortune 500 marketers and an AI exeat agent that
-            4,000+ university students rely on daily. currently at
+            3,000+ university students rely on daily. currently at
             <span className="inline-flex items-center align-middle cursor-pointer ml-2 text-white font-medium">
               <img
                 src="/featherflow_logo.jpg"
