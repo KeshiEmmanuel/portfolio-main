@@ -10,7 +10,7 @@ const MyExperience = () => {
         <small className="text-zinc-500 text-sm">2025 - Now</small>
         <div className="max-w-[480px]">
           <h1 className="font-medium">
-            Full-Stack Engineer at
+            Product Engineer at
             <span className="inline-flex items-center align-middle ml-2 cursor-pointer text-white font-medium">
               <img
                 src="/featherflow_logo.jpg"
@@ -33,7 +33,7 @@ const MyExperience = () => {
         <small className="text-zinc-500">Mid 2024 - 2025</small>
         <div className="max-w-[480px]">
           <h1 className="font-medium">
-            FullStack Engineer at
+            Product Engineer at
             <span className="inline-flex items-center align-middle cursor-pointer ml-2 text-white font-medium">
               <img
                 src="/anchor.webp"

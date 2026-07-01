@@ -98,7 +98,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: hovered ? 1 : 0 }}
         transition={{ duration: 0.25, ease: "easeInOut" }}
-        className="absolute inset-0 flex flex-col items-center justify-center gap-3"
+        className="absolute inset-0 flex flex-col items-center justify-center gap-3 font-primary-"
         style={{
           background:
             "linear-gradient(135deg, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.55) 100%)",
@@ -121,7 +121,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
           "
           onClick={(e) => e.stopPropagation()}
         >
-          View Project ↗
+          View Project
         </a>
       </motion.div>
     </div>
@@ -178,7 +178,7 @@ const ProjectsSection = () => {
   }, []);
 
   return (
-    <section className="max-w-[1600px] px-2 py-5 mx-auto">
+    <section className="max-w-[1600px] px-2 py-5 mx-auto" id="projects">
       <InfiniteTrack projects={projects} />
     </section>
   );

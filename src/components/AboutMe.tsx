@@ -33,7 +33,23 @@ export const AboutMe = () => {
           </p>
         </div>
       </div>
-      <div>
+      <div className="flex gap-4">
+        <a
+          className="inline-flex items-center gap-1 duration-500 hover:underline"
+          href="https://www.linkedin.com/in/keshiemmanuel/"
+          target="_blank"
+        >
+          <span className="text-sm text-zinc-400">Chat w/ me</span>{" "}
+          <img src="/linkedin.svg" className="w-6" />
+        </a>
+        <a
+          className="inline-flex items-center duration-500 hover:underline  gap-1"
+          href="https://x.com/_rudosurebec"
+          target="_blank"
+        >
+          <span className="text-sm text-zinc-400">Vibe w/ me</span>{" "}
+          <img src="/twitter.svg" className="w-5" />
+        </a>
         <a href="mailto:keshichukwuebuka@gmail.com" target="_blank">
           <SeeWorkButton text="Contact Me" />
         </a>
