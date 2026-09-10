@@ -34,10 +34,10 @@ const PROJECT_DATA: Project[] = [
   },
   {
     id: 4,
-    title: "Forcythe",
-    href: "https://forcythe-clone-sigma.vercel.app/",
+    title: "Alex",
+    href: "https://exithelper.vercel.app/",
     mediaSrc:
-      "https://res.cloudinary.com/didojkp5o/video/upload/v1780786800/forcythe-showcase_mfyfuk.mp4",
+      "https://res.cloudinary.com/didojkp5o/video/upload/v1783429554/new-alex_ddqy73.mp4",
   },
 ];
 

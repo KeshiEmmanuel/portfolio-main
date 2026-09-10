@@ -1,22 +1,17 @@
-import { AboutMe } from "./components/AboutMe";
-import MyExperience from "./components/MyExperience";
-import { Navbar } from "./components/Navbar";
-import ProjectsSection from "./components/ProjectsSection";
-import TechStack from "./components/TechStack";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ChatUIPage from "./pages/ChatUIPage";
+import CaptureMenu from "./pages/RedesignExtension";
 
 const App = () => {
   return (
-    <main className="w-full bg-zinc-950 min-h-screen font-primary">
-      <article className="max-w-[650px] text-white flex flex-col gap-10  mx-auto">
-        <Navbar />
-        <AboutMe />
-      </article>
-      <ProjectsSection />
-      <article className="max-w-[650px] text-white flex pt-10 flex-col gap-10  mx-auto">
-        <MyExperience />
-        <TechStack />
-      </article>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/chatui" element={<ChatUIPage />} />
+        <Route path="/extension-ui" element={<CaptureMenu />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

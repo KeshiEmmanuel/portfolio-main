@@ -2,26 +2,27 @@ import SeeWorkButton from "./SeeMyWorkButton";
 
 export const AboutMe = () => {
   return (
-    <section className="px-5 lg:px-0  h-full flex flex-col gap-6 pt-20">
-      <div>
-        <h1 className="text-xl font-medium">
+    <section className="px-5 lg:px-0  h-full flex flex-col gap-3 pt-10">
+      <div className="flex flex-col gap-0.5">
+        <h1 className="text-2xl tracking-tighter  text-balance font-medium">
           I'm Keshi Chukwuebuka{" "}
           <span className="inline-flex items-center align-middle">
             <img src="/checkmark.png" className="w-5 h-5" alt="cracked" />
           </span>{" "}
         </h1>
-        <small className="text-zinc-500 text-sm">
-          Engineering / AI / Product
+        <small className="text-gray-400/75 text-xs">
+          Design & Product Engineer
         </small>
       </div>
       <div>
         <div>
-          <p className="text-zinc-400 leading-tight">
+          <p className="text-gray-300 text-pretty text-sm">
             I'm 18, and I've been shipping products people actually use for over
-            3 years. At 13, I built a birthday notification system for my
-            parents just because I could. Since then, I've built AI content
-            workflows for Fortune 500 marketers and an AI exeat agent that
-            3,000+ university students rely on daily. currently at
+            3 years. It started at 13, I built a birthday notification system
+            for my parents, just because I could. Since then I've worked with a
+            client doing $7M ARR, and led development for an AI exeat agent
+            currently rolling out to serve over 3,000+ university students.
+            currently at
             <span className="inline-flex items-center align-middle cursor-pointer ml-2 text-white font-medium">
               <img
                 src="/featherflow_logo.jpg"
@@ -34,7 +35,7 @@ export const AboutMe = () => {
         </div>
       </div>
       <div className="flex gap-4">
-        <a
+        {/* <a
           className="inline-flex items-center gap-1 duration-500 hover:underline"
           href="https://www.linkedin.com/in/keshiemmanuel/"
           target="_blank"
@@ -49,7 +50,7 @@ export const AboutMe = () => {
         >
           <span className="text-sm text-zinc-400">Vibe w/ me</span>{" "}
           <img src="/twitter.svg" className="w-5" />
-        </a>
+        </a> */}
         <a href="mailto:keshichukwuebuka@gmail.com" target="_blank">
           <SeeWorkButton text="Contact Me" />
         </a>
