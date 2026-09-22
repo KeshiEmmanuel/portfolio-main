@@ -6,11 +6,23 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+  /* font-size: 62.5%; */
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 @theme inline {
   --font-primary: "Inter";
   --font-secondary: "Geist";
+  --font-mono: "Kode Mono";
+  --font-display: "Licorice";
   --color-blue-primary: #157ae6;
   --color-primary: #010000;
   --radius-sm: calc(var(--radius) - 4px);
@@ -101,9 +113,19 @@ body {
 
 .ai-chat-stroke {
   /* border-bottom: 2.5px solid #1366bf; */
-  box-shadow: 0 3px 0px 0px #1366bf;
+  box-shadow: 0 2px 0px 0px #1366bf;
 }
-.chat-shadow {
+.timetracker_button {
+  background: linear-gradient(135deg, #03a9f4 0%, #09adf6 100%);
+}
+.card-bg {
+  background: linear-gradient(
+    180deg,
+    #f7f9fa 0%,
+    #f9f9f9 30%,
+    #ffffff 57%,
+    #f9f9f9 100%
+  );
 }
 
 .dark {

@@ -1,4 +1,4 @@
-import { ArrowUp, Hexagon } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { createPortal } from "react-dom";
 import { AnimatePresence, motion } from "motion/react";
@@ -124,8 +124,12 @@ function MessageBubble({ role, text }: Turn) {
       initial={{ opacity: 0, y: 14, scale: 0.96 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       exit={{ opacity: 0, scale: 0.96 }}
+      style={{
+        lineHeight: "28px",
+        borderRadius: "12px",
+      }}
       transition={{ type: "spring", stiffness: 500, damping: 40 }}
-      className={` px-3 h-7 rounded-xl text-sm leading-snug text-pretty flex items-center ${
+      className={` px-3 h-[28px] text-center  text-[14px] text-pretty flex items-center ${
         isUser
           ? "self-end bg-white  text-gray-900"
           : "self-start bg-blue-primary text-white ai-chat-stroke"
@@ -251,10 +255,9 @@ const InputBar = ({
   return (
     <>
       <input
-        className="w-full bg-gray-400/15 h-8 px-3 rounded-full text-sm outline-none focus:border-gray-100/50 focus:border-2"
+        className="w-full bg-gray-400/15 h-8 px-3 rounded-full text-sm outline-none"
         placeholder="Create 3 videos for me"
         value={value}
-        readOnly
       />
       <button
         onClick={onSend}

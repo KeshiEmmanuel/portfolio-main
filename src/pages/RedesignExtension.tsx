@@ -34,24 +34,21 @@ const MenuItem = ({
       onClick={onClick}
       onMouseEnter={() => setActiveItem(id)}
       onMouseLeave={() =>
-        // Guard against a race with the next item's onMouseEnter:
-        // only clear if *this* item is still the active one.
         setActiveItem((current) => (current === id ? null : current))
       }
       style={{
         position: "relative",
       }}
     >
-      {/* Shared animated hover background — the PRIMARY motion.
-          Slow and critically damped (bounce: 0) so it glides rather
-          than bounces. This is the motion that should read as "slick". */}
+      {/* Only the background moves */}
       {isActive && (
         <motion.span
           layoutId="menu-hover"
           transition={{
             type: "spring",
-            duration: 0.15,
-            bounce: 0,
+            stiffness: 700,
+            damping: 45,
+            mass: 0.45,
           }}
           style={{
             position: "absolute",
@@ -59,32 +56,28 @@ const MenuItem = ({
             borderRadius: "4px",
             background: "#f3f3f3",
             zIndex: 0,
-            // Critical: without this, the sliding highlight intercepts
-            // mouse events from the buttons it's passing over/under,
-            // which breaks the hover chain mid-animation.
             pointerEvents: "none",
           }}
         />
       )}
 
-      {/* Button content — SECONDARY motion.
-          Quick and slightly snappier than the pill, so the two motions
-          are legibly different speeds instead of moving in lockstep. */}
-      <motion.div
-        className="inline-flex gap-2 items-center relative z-10"
-        // animate={{ x: isActive ? 2 : 0 }}
-        transition={{ type: "spring", stiffness: 420, damping: 28 }}
-      >
+      {/* Content stays completely fixed */}
+      <div className="inline-flex gap-2 items-center relative z-10">
         <span style={{ display: "inline-flex" }}>{icon}</span>
 
         <span className="inline-block">{label}</span>
-      </motion.div>
+      </div>
 
       {shortcut && (
         <motion.span
           className="inline-block tooltip-cmd px-1 py-0.5 rounded-[4px] text-[#494B4C] relative z-10"
-          animate={{ opacity: isActive ? 1 : 0.55 }}
-          transition={{ duration: 0.2 }}
+          animate={{
+            color: isActive ? "#000000" : "#494B4C",
+          }}
+          transition={{
+            duration: 0.15,
+            ease: "easeOut",
+          }}
         >
           {shortcut}
         </motion.span>
@@ -92,7 +85,6 @@ const MenuItem = ({
     </motion.button>
   );
 };
-
 const Divider = () => <hr />;
 
 const CaptureMenu = () => {

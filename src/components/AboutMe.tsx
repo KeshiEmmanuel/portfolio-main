@@ -1,38 +1,41 @@
-import SeeWorkButton from "./SeeMyWorkButton";
+// import SeeWorkButton from "./SeeMyWorkButton";
 
 export const AboutMe = () => {
   return (
-    <section className="px-5 lg:px-0  h-full flex flex-col gap-3 pt-10">
-      <div className="flex flex-col gap-0.5">
-        <h1 className="text-2xl tracking-tighter  text-balance font-medium">
-          I'm Keshi Chukwuebuka{" "}
-          <span className="inline-flex items-center align-middle">
-            <img src="/checkmark.png" className="w-5 h-5" alt="cracked" />
-          </span>{" "}
-        </h1>
-        <small className="text-gray-400/75 text-xs">
-          Design & Product Engineer
-        </small>
+    <section className=" lg:px-0  h-full flex flex-col gap-3">
+      <div className="flex flex-col w-full items-end">
+        <h1 className=" font-display text-[40px]">Ebuka</h1>
       </div>
-      <div>
-        <div>
-          <p className="text-gray-300 text-pretty text-sm">
-            I'm 18, and I've been shipping products people actually use for over
-            3 years. It started at 13, I built a birthday notification system
-            for my parents, just because I could. Since then I've worked with a
-            client doing $7M ARR, and led development for an AI exeat agent
-            currently rolling out to serve over 3,000+ university students.
-            currently at
-            <span className="inline-flex items-center align-middle cursor-pointer ml-2 text-white font-medium">
-              <img
-                src="/featherflow_logo.jpg"
-                className="w-4 h-4 rounded mr-1"
-                alt="logo"
-              />
-              Featherflow
-            </span>
+      <div className="flex flex-col gap-4">
+        <div className="w-full">
+          <p
+            className="text-[#3D3D3D] w-full font-mono text-sm"
+            style={{
+              lineHeight: "18px",
+            }}
+          >
+            am 18, obsessed with designing and building products and features
+            people actually use.i take ownership of whatever am building end to
+            end (from design to production) with or without a PM. i love
+            designing not just designing..but designing with care and taste for
+            whatever product i lay my hands [from the pharse you should feel how
+            i hate AI slop], if am not designing and shipping am either
+            doomscrolling, watching movies or gaming. my final designs are
+            always at Frame 2039 or more :)
           </p>
         </div>
+        <a href="mailto:keshichukwuebuka@gmail.com" target="_blank">
+          <button
+            className="w-fit text-[#FCFCFC] font-mono"
+            style={{
+              paddingInline: "16px",
+              paddingBlock: "10px",
+              backgroundColor: "#1E1E1F",
+            }}
+          >
+            Contact Me
+          </button>
+        </a>
       </div>
       <div className="flex gap-4">
         {/* <a
@@ -51,9 +54,6 @@ export const AboutMe = () => {
           <span className="text-sm text-zinc-400">Vibe w/ me</span>{" "}
           <img src="/twitter.svg" className="w-5" />
         </a> */}
-        <a href="mailto:keshichukwuebuka@gmail.com" target="_blank">
-          <SeeWorkButton text="Contact Me" />
-        </a>
       </div>
     </section>
   );
