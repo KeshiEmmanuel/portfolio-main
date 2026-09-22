@@ -24,7 +24,11 @@ export const AboutMe = () => {
             always at Frame 2039 or more :)
           </p>
         </div>
-        <a href="mailto:keshichukwuebuka@gmail.com" target="_blank">
+        <a
+          href="mailto:keshichukwuebuka@gmail.com"
+          target="_blank"
+          className="cursor-pointer"
+        >
           <button
             className="w-fit text-[#FCFCFC] font-mono"
             style={{
